@@ -303,4 +303,7 @@ p.v {
     width: 60% !important;
     line-height: 1.5;
   }
+  textarea{
+    height: 150px
+ } 
 }
