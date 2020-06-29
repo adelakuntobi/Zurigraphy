@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet -->
+  <link href="./style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Font Awesome CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Zuri Photography</title>
+</head>
+<body onload="checkValue()">
+  <div class="display-none bg-orange p-3 w-100">
+    <h1 class="bg-orange col-10">ZURI PHOTOGRAPHY</h1>
+    <span class="open col-2" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  <div class="d-flex head position-relative">
+    <div id="mySidenav" class="sidenav position-relative w-25p">
+      <h1 style="font-size: 1.5rem;" class="none text-center mt-5 mb-5">ZURI PHOTOGRAPHY</h1>
+
+      <a href="javascript:void(0)" class="display-none closebtn" style="color:white;" onclick="closeNav()">&times;</a>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonal">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="position-absolute1 text-center">
+        <p class="line-1 mb-0">Copyright © Zuri Studios 2020</p>
+        <div class="m-3">
+          <i class="p-2 fa fa-instagram"></i>
+          <i class="p-2 fa fa-twitter"></i>
+          <i class="p-2 fa fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    
+    <img class="w-75p mr-0" src="./images/header-img.png">
+    <div class="zuri">
+      <h1>Zuri Ivy</h1>
+      <p class="v">PHOTOGRAPHY</p>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+  <section id="about" class="text-center">
+    <h5 class="orange">About me</h5>
+    <h1 class="bold">Zuri Ivy</h1>
+    <hr>
+    <p>Zuri Ivy is a creative, high-energy photographer producing premium-quality photos in studio settings. 
+      She is dedicated to creating memories that last a lifetime while driving sales and studio profits. 
+      She manages all facets of photo shoots including scheduling, designing sets, shooting, photo editing, 
+      collaborating with clients and closing add-on sales. She maintains strong digital/technical skills 
+      and uses Adobe Photoshop Lightroom CC daily.<br><br>
+      Zuri graduated from the ABC Institute of Nigeria in 
+      2013 where she obtained a Bachelor’s degree in Photography. She is a proud member of the Professional 
+      Photographers of Nigeria (PPN). She specializes majorly in <b>wedding, portrait and landscape photography.</b>
+      As a beneficiary of different honors and awards, Zuri has shown great strides in the 
+      photography industry and continues to do.
+    </p>
+  </section>
+  
+  <h5 class="mt-4 mb-4 orange text-center">MY AWARDS</h5>
+  <section class="text-center row d-flex justify-content-between mb-5">
+    <img class="col-sm mySlides move" src="./images/award-1.svg">
+    <img class="col-sm mySlides move" src="./images/award-2.svg">
+    <img class="col-sm mySlides move" src="./images/award-3.svg">
+    <img class="col-sm mySlides move" src="./images/award-4.svg">
+    <img class="col-sm mySlides move" src="./images/award-5.svg">
+
+    <div id="displayNone" class="m-auto">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <section id="services" class="text-center ">
+    <h5 class="orange">What I Do</h5>
+    <h1 class="bold">SERVICES</h1>
+    <hr>
+    <div class="row d-flex justify-content-between mb-5">
+      <div class="m-2 col-md position-relative">
+        <img class="w-100" src="./images/Group 1.png">
+        <h3 class="position-absolute text-white text-center"><span class="orange">WEDDING</span><br> PHOTOGRAPHY</h3>
+      </div>
+      <div class="m-2 col-md position-relative">
+        <img class="w-100 black" src="./images/Group 2.png">
+        <h3 class="position-absolute text-white text-center"><span class="orange">LANDSCAPE</span><br> PHOTOGRAPHY</h3>
+      </div>
+      <div class="m-2 col-md position-relative">
+        <img class="w-100 black" src="./images/Group 3.png">
+        <h3 class="position-absolute text-white text-center"><span class="orange">PORTRAIT</span><br> PHOTOGRAPHY</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center">
+    <h5 class="orange">Gallery</h5>
+    <h1 class="bold">PORTFOLIO</h1>
+    <hr>
+    <div class="mb-5">
+      <div class="row">
+        <img class="col-md mt-4 mb-4" src="./images/p-1.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-2.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-3.png">
+      </div>
+      <div class="row">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-4.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-5.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-6.png">
+      </div>
+      <div class="row">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-7.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-8.png">
+        <img class="col-md mt-4 mb-4 black" src="./images/p-9.png">
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonal">
+    <h5 class="orange text-center">What Do People Say</h5>
+    <h1 class="bold text-center">TESTIMONALS</h1>
+    <hr>
+    <div id="h-100" class="row position-relative d-flexin justify-content-between mb-5">
+      <p class="m-auto w-50 size-20">
+        <span class="quote">“</span>
+         It is always a great time working with Zuri Ivy. I always trust her for 100% professionalism in any job I give her
+         <span class="quote">”</span>
+        </p>
+        <div>
+          <img class="test-img" src="./images/text-1.png">
+          <h3 class="text-center bold">Zan Lawson</h3>
+          <p class="text-center line-1">Client</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="text-center col-11 m-auto">
+    <h5 class="orange">Have A Session</h5>
+    <h1 class="bold">CONTACT</h1>
+    <hr>
+    <p>I’d love to hear from you!Kindly fill out the form below or reach me through my contact listed below.</p>
+    <div class="d-flexin justify-content-between">
+      <textarea class="pink w-70 p-3" placeholder="Your message here"></textarea>
+      <div class="w-30">
+        <input class="w-100 p-3 pink" placeholder="Name" >
+        <input class="w-100 p-3 email pink" placeholder="Email" >
+        <button class="btn btn-primary p-2 w-100">Send
+          <img src="./images/arrow.svg">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="col-11 mr-auto ml-auto row mt-5">
+    <div class="flex col-md">
+      <img class="circle mb-3" src="./images/mail.svg">
+      <div>
+        <h3>Email</h3>
+        <p>
+          zuristudios@gmail.com<br>
+          supportzuristudios.mail
+        </p>
+      </div>
+    </div>
+    <div class="flex col-md">
+      <img class="circle mb-3" src="./images/phone-call.svg">
+      <div>
+        <h3>Phone Number</h3>
+        <p>
+          +234 816 0877 462<br>
+          +234 819 8772 263
+        </p>
+      </div>
+    </div>
+    <div class="flex col-md">
+      <img class="circle mb-3" src="./images/map-pin.svg">
+      <div>
+        <h3>Location</h3>
+        <p>
+          No 10, Lekki Phase 1 <br>
+          Lagos State, Nigeria.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center gray">
+    <p class="line-1 mb-0">Copyright © Zuri Studios 2020</p>
+    <div class="m-3">
+      <i class="p-2 fa fa-instagram"></i>
+      <i class="p-2 fa fa-twitter"></i>
+      <i class="p-2 fa fa-pinterest"></i>
+    </div>
+  </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
