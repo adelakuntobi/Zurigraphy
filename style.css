@@ -299,4 +299,8 @@ p.v {
     height: 100vw;
     margin: auto;
   }
+  .w-50{
+    width: 60% !important;
+    line-height: 1.5;
+  }
 }
