@@ -29,11 +29,11 @@
   }
 
   function openNav() {
-    if(document.getElementById("mySidenav").style.display === "none"){
-      document.getElementById("mySidenav").style.display = "block";
+    if(document.getElementById("mySidenav").style.display === "block"){
+      document.getElementById("mySidenav").style.display = "none";
     }
     else{
-      document.getElementById("mySidenav").style.display = "none";
+      document.getElementById("mySidenav").style.display = "block";
     }
   }
   
